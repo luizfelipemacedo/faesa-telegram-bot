@@ -1,0 +1,24 @@
+{
+  "author": "@luizfelipemacedo",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env --watch --trace-warnings --import tsx ./src/index.ts",
+    "build": "tsup --minify --format esm ./src/*.ts",
+    "start": "node --env-file=.env dist/index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "5.12.1",
+    "node-telegram-bot-api": "0.65.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.2",
+    "@types/node-telegram-bot-api": "0.64.6",
+    "prisma": "5.12.1",
+    "tsup": "8.0.2",
+    "tsx": "4.7.1",
+    "typescript": "5.4.3"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
